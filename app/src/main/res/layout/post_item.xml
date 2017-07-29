@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorDivider">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayoutPost"
+        android:background="@color/colorWhite"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+    <!-- Thumbnail Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnailPost"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Post Title -->
+    <TextView
+        android:id="@+id/titlePost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/thumbnailPost"
+        android:layout_marginBottom="10dp"
+        android:textSize="23sp" />
+
+    <!-- Detail Line -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutInfo"
+        android:layout_below="@id/titlePost"
+        android:background="@color/colorWhite"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+        <!-- Views -->
+        <TextView
+            android:id="@+id/viewsPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_post_view"
+            android:textColor="@color/colorGold"
+            android:gravity="center"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorDivider" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/datePost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorGold"
+            android:gravity="center"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorDivider" />
+
+        <!-- Share -->
+        <ImageButton
+            android:id="@+id/sharePost"
+            android:contentDescription="@string/shareDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_post_share"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorDivider" />
+
+        <!-- Favourite Post -->
+        <ImageButton
+            android:id="@+id/favPost"
+            android:contentDescription="@string/favDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_star"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Post Category -->
+    <TextView
+        android:id="@+id/categoryPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="15sp" />
+    <!-- Post Author -->
+    <TextView
+        android:id="@+id/authorPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="15sp" />
+    <!-- Post Content -->
+    <TextView
+        android:id="@+id/contentPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="15sp" />
+
+</RelativeLayout>

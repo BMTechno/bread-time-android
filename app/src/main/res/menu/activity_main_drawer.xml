@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/ic_menu_home"
+            android:title="@string/feed" />
+        <item
+            android:id="@+id/delivery"
+            android:icon="@drawable/ic_shopping_cart"
+            android:title="@string/delivery" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_cake"
+            android:title="@string/gallery" />
+        <item
+            android:id="@+id/nav_restaurant"
+            android:icon="@drawable/ic_restaurant"
+            android:title="@string/restaurant" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_location_on"
+            android:title="@string/about" />
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_menu_notifications"
+            android:title="@string/notifications" />
+        <item
+            android:id="@+id/nav_about_app"
+            android:icon="@drawable/ic_info"
+            android:title="@string/about_app" />
+    </group>
+
+</menu>

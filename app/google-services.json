@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "461976451285",
+    "firebase_url": "https://bread-time-android-db913.firebaseio.com",
+    "project_id": "bread-time-android-db913",
+    "storage_bucket": "bread-time-android-db913.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461976451285:android:c011d0b2ded8cdf9",
+        "android_client_info": {
+          "package_name": "com.bread.time.breadtime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461976451285-s9cfkvfgpomesmc5a20c5pdesbo7o3a8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCbpuwV_YIY-Bz4Cn4ffiohktcxMvcnQg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

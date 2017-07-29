@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorIcons" >
+
+        <!-- Thumbnail Image -->
+        <ImageView
+            android:id="@+id/thumbnailPostDetail"
+            android:contentDescription="@string/imageDesc"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop" />
+
+        <!-- Post Title -->
+        <TextView
+            android:id="@+id/titlePostDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thumbnailPostDetail"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textIsSelectable="true"
+            android:textSize="23sp" />
+
+    <!-- Detail Line -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutInfo"
+        android:layout_below="@id/titlePostDetail"
+        android:background="@color/colorDivider"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <!-- Views -->
+        <TextView
+            android:id="@+id/viewsPostDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_post_view"
+            android:textColor="@color/colorGold"
+            android:gravity="center"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorDivider" />
+        <!-- Date -->
+        <TextView
+            android:id="@+id/datePostDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorGold"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorDivider" />
+        <!-- Category -->
+        <TextView
+            android:id="@+id/categoryPostDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorGold"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!-- Author Line -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutAuthor"
+        android:layout_below="@id/linearLayoutInfo"
+        android:background="@color/colorWhite"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorHighlight" />
+        <!-- Desc Author -->
+        <TextView
+            android:id="@+id/descAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/postAuthor"
+            android:textSize="15sp" />
+        <!-- Author Name -->
+        <TextView
+            android:id="@+id/authorPostDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="1dp"
+            android:background="@color/colorHighlight" />
+
+    </LinearLayout>
+
+    <!-- Social Buttons Line -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutSocial"
+        android:layout_below="@id/linearLayoutAuthor"
+        android:background="@color/colorWhite"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal"
+        android:weightSum="8" >
+
+        <!-- Facebook -->
+        <ImageButton
+            android:id="@+id/btnFacebook"
+            android:contentDescription="@string/shareDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_facebook"
+            android:background="@android:color/transparent"
+            android:gravity="center" />
+        <!-- Google Plus -->
+        <ImageButton
+            android:id="@+id/btnGooglePlus"
+            android:contentDescription="@string/shareDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_googleplus"
+            android:background="@android:color/transparent"
+            android:gravity="center" />
+        <!-- Twitter -->
+        <ImageButton
+            android:id="@+id/sharePost"
+            android:contentDescription="@string/shareDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_twitter"
+            android:background="@android:color/transparent"
+            android:gravity="center" />
+        <!-- WhatsApp -->
+        <ImageButton
+            android:id="@+id/btnWhatsApp"
+            android:contentDescription="@string/shareDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_whatsapp"
+            android:background="@android:color/transparent"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Content -->
+    <TextView
+        android:id="@+id/contentPostDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutSocial"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textIsSelectable="true"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+</RelativeLayout>
+</ScrollView>
